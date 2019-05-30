@@ -18,5 +18,5 @@ if __name__=='__main__':
         file = open(file_path,'r')
         for line in file.readlines():
             producer.send(topic=topic,value=str.encode(line))
-            sleep(2)
+            sleep(1)
         producer.close()
